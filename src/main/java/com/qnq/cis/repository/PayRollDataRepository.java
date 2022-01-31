@@ -1,7 +1,7 @@
 package com.qnq.cis.repository;
 
-import com.qnq.cis.entity.PayRollData;
 import org.springframework.data.jpa.repository.JpaRepository;
+import springfox.documentation.spring.web.json.Json;
 
-public interface PayRollDataRepository extends JpaRepository<PayRollData, Integer> {
+public interface PayRollDataRepository extends JpaRepository<Json, Integer> {
 }

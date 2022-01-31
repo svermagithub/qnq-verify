@@ -28,12 +28,12 @@ spring:
       bootstrap-servers: b-1.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094,b-3.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094,b-2.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094
       group-id: cis
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.JsonDeserializer
     producer:
       bootstrap-servers: b-1.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094,b-3.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094,b-2.demo-cluster-1.yphti9.c21.kafka.us-east-1.amazonaws.com:9094
       group-id: cis
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.JsonDeserializer
     security:
       protocol: SSL
     ssl:
